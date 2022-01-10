@@ -1,0 +1,22 @@
+To create a hidden file or directory: 
+Add (.) before the name of the file/directory
+Example:
+mkdir .hidden
+touch .hidden
+
+To display hidden files or directories :
+Use (ls -a) parent file/directory name
+Example:
+ls -a CLI homework
+
+To create a multiple nested directories:
+add -p after the mkdir command
+Example:
+mkdir -p parent/child1/child2/child3/etc
+
+To append a message to a file without a newline characters:
+Use (>>) after echo command
+P.S: newline character being (-n) or %s I presume 
+Example:
+echo first message >test.txt
+echo second message >>test.txt
