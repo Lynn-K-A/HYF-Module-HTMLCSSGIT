@@ -1,0 +1,92 @@
+body {
+  background-color: white;
+  font-family: Garamond;
+}
+header {
+  border-radius: 20%;
+  text-align: center;
+  color: beige;
+  background-color: #800000;
+}
+h1 {
+  font-size: 4.5em;
+}
+h2 {
+  font-size: 3em;
+}
+h3 {
+  color: #800000;
+  font-size: 2.5em;
+}
+h4 {
+  font-size: 2em;
+}
+#container1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-grow: 4;
+  float: right;
+  width: 60%;
+  margin: 2% 5% 2% 5%;
+}
+.edu {
+  font-size: 1em;
+  list-style-image: linear-gradient(to left bottom, red, rgb(255, 187, 0));
+}
+.txt1 {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+.exp {
+  font-size: 1em;
+  list-style-image: linear-gradient(to left bottom, red, rgb(255, 187, 0));
+}
+.txt2 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.exp1 {
+  list-style-image: linear-gradient(to left bottom, red, rgb(0, 255, 179));
+}
+.skills {
+  font-size: 1.2em;
+  list-style-image: linear-gradient(to left bottom, red, rgb(255, 187, 0));
+}
+.lang {
+  font-size: 1em;
+  list-style-image: linear-gradient(to left bottom, red, rgb(0, 255, 179));
+}
+aside {
+  border-radius: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  float: left;
+  width: 25%;
+  background-color: #800000;
+  margin: 2% 4% 2% 3%;
+  color: beige;
+}
+img {
+  border-radius: 30%;
+  margin-left: 20%;
+  max-width: 60%;
+  height: auto;
+}
+h4 {
+  text-align: center;
+}
+.aboutMe {
+  padding: 1%;
+  text-align: center;
+  font-size: 1.2em;
+}
+.contactInfo {
+  text-align: center;
+  font-size: 1.2em;
+}
