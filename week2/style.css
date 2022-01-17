@@ -92,9 +92,11 @@ nav::after {
 }
 .lp-text {
     margin: 2% 2% 2% 4%;
-    flex: 1 1 90%;
+    flex: 1 1 80%;
     font-size: 1em;
     border-bottom: 2px solid black;
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
 }
 .lp.text:last-child {
     border: 0;
