@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF0E5;
+}
+nav {
+    z-index: 4;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    top: 0;
+    background-color: #FFF0E5;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav a {
+    color: black;
+}
+.nav-list {
+    margin: 1% 0;
+}
+.nav-list li, .nav-login li {
+    font-size: 1.2em;
+    text-align: center;
+    transition-duration: 0.5s;
+    padding: 8px;
+    list-style: none;
+    display: inline-block;
+}
+.nav-login {
+    margin-left: auto;
+    margin-right: 1%;
+}
+li:hover {
+    cursor: pointer;
+  }
+ul li ul {
+    background-color: #FFF0E5;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: auto;
+    display: none;
+  }
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+nav::after {
+    content: "";
+    /*display: table;*/
+    clear: both;
+}
+.main {
+    margin-top: 0;
+}
+.landing-section {
+    margin-top: 10%;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+.landing-section > .landing-page, .landing-page1, .landing-page2 {
+    background-color: #FFF0E5;
+    flex: 1 1 50%;
+}
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.landing-page1 {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: 100%;
+}
+.lp-text {
+    margin: 2% 2% 2% 4%;
+    flex: 1 1 90%;
+    font-size: 1em;
+    border-bottom: 2px solid black;
+}
+.lp.text:last-child {
+    border: 0;
+}
+.lp-text:hover, .lp-text:active {
+    background-color: white;
+    font-size: 1.2em;
+}
+.landing-page2 {
+    background-color: #FFF0E5;
+    background-image: radial-gradient(black 10%, transparent 11%),
+    radial-gradient(black 10%, transparent 11%);
+    background-size: 20px 20px;
+    background-position: 0 0, 8px 8px;
+    background-repeat: repeat;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+.landing-page2 > .lp-block {
+    margin: 3%;
+    background-color: peru;
+    flex: 1 1 35%;
+}
+.lp-block {
+    transition: box-shadow 0.3s ease-in-out;
+    border: 0.1em solid black;
+    background-color: white;
+}
+.lp-block:hover {
+    transform: translate(5px, -8px);
+    box-shadow: 0px 4px 8px black, 0px -4px 8px black;
+}
