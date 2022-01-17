@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    margin: 0;
+    margin: 2%;
     padding: 0;
     background-color: #FFF0E5;
 }
@@ -234,8 +234,8 @@ nav::after {
     text-align: center;
     flex: 1 1 40%;
 }
-footer {
-    justify-content: first baseline;
+.footer {
+    justify-content: baseline;
     width: 100%;
     padding: 0;
     height: auto;
@@ -244,14 +244,44 @@ footer {
     align-content: stretch;
     flex-wrap: wrap; 
 }
-footer > .fo1 {
-flex: 1 1 50%;
+.footer > .fo1 {
+flex: 1 1 40%;
+background-color: chartreuse;
 }
-footer > .fo2 {
-flex: 1 1 50%;
+.fo1 {
+    justify-content: baseline;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap; 
 }
-footer > .fo3 {
+.fo1 > .fo1-1 {
+    flex: 1 1 33.33%;
+}
+.footer > .fo2 {
+flex: 1 1 40%;
+background-color: darkblue;
+}
+.fo2 {
+    justify-content: baseline;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap; 
+}
+.fo2 p {
 flex: 1 1 100%;
 }
-
-
+.fo2 > .fo2-1 {
+    flex: 1 1 40%;
+}
+.footer > .fo3 {
+flex: 1 1 100%;
+background-color: darkgreen;
+}
